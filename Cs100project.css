@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+  }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgb(155, 92, 189);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height:50px;
+}
+header h1 {
+    color: white;
+    margin-right: 20px;
+    margin: 0; 
+}
+nav {
+    margin-left: auto;
+
+} 
+
+nav ul {
+    
+    gap: 15px; 
+}
+
+nav ul li {
+    display: inline-block;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; 
+    
+}
+nav ul li a:hover {
+    background-color:red; 
+}
+main {
+    background-color: rgb(104, 94, 94);
+    overflow: auto;  
+    padding-top: 30px;
+    display: flex;
+    min-height: 100vh; /*Main in altina beyaz boslugu kaldirmak icin yaptim */
+}
+.profile{
+    
+    background-color:rgb(155, 92, 189);
+    height: 655px;
+    width: 540px;
+    margin-left: 30px;
+    border-radius: 35px;
+    border-style: solid;border-color: black;
+    border-width: 3px;
+    margin-right: 50px;
+    text-align: center; 
+}
+.post{
+    background-color:rgb(155, 92, 189);
+    width: 700px;
+    height: 290px;
+    margin-left: 50px;
+    border-radius: 35px;
+    border-style: solid;border-color: black;
+    border-width: 3px;
+    
+}
+.bio{
+    background-color:rgb(155, 92, 189);
+    width: 700px;
+    height: 290px;
+    margin-left: 50px;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+.post-bio-wrapper {
+    display: grid;
+    gap: 30px; 
+    height: 700px;
+}
+.profile-img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    margin-top: 20px ;
+    border-style: solid; 
+    border-width: 1px;
+}
+.user-details {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns layout */
+    gap: 10px; /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
+}
+.user-details > div {
+    margin: 5px 0;
+    font-size: 16px; 
+}
+
+
+
+
+
