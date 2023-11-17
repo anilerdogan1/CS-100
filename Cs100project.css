@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
 }
 header {
-    background-color: rgb(155, 92, 189);
+    background-color:rgb(193, 161, 255);
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -57,7 +57,7 @@ main {
 }
 .profile{
     
-    background-color:rgb(155, 92, 189);
+    background-color:rgb(193, 161, 255);
     height: 655px;
     width: 540px;
     margin-left: 30px;
@@ -68,7 +68,7 @@ main {
     text-align: center; 
 }
 .post{
-    background-color:rgb(155, 92, 189);
+    background-color:rgb(193, 161, 255);
     width: 700px;
     height: 290px;
     margin-left: 50px;
@@ -78,7 +78,7 @@ main {
     
 }
 .bio{
-    background-color:rgb(155, 92, 189);
+    background-color:rgb(193, 161, 255);
     width: 700px;
     height: 290px;
     margin-left: 50px;
@@ -86,6 +86,15 @@ main {
     border-style: solid;
     border-color: black;
     border-width: 3px;
+}
+.bio p {
+    font-size: 30px;
+    align-items: center;
+    text-align: justify;
+   
+   
+
+
 }
 .post-bio-wrapper {
     display: grid;
@@ -95,11 +104,49 @@ main {
 .profile-img {
     width: 300px; 
     height: 300px; 
-    border-radius: 10px; 
+    border-radius: 100%; 
     margin-top: 20px ;
     border-style: solid; 
     border-width: 1px;
 }
+.profile-buttons {
+    background-color: black;
+    height: 50px;
+
+}
+.profile-buttons ul li {
+    display: inline-block;
+    align-items: center;
+   
+   
+}
+.profile-buttons ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; 
+    align-items: center;
+    margin-top: 5px;
+}
+.profile-buttons ul li a:hover {
+    background-color: red;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .user-details {
     display: grid;
     grid-template-columns: auto auto; /* Two columns layout */
@@ -110,4 +157,74 @@ main {
 .user-details > div {
     margin: 5px 0;
     font-size: 16px; 
+}
+
+
+.video {
+    width: 200px;
+    display: inline;
+    border-radius: 25px;
+    border-style: solid;
+    margin-top: 35px;
+    margin-bottom: auto;
+
+
+
+}
+.video-wrapper{
+    display: inline;
+    margin-left: 45px;
+    
+
+
+
+
+
+
+
+
+}
+.post {
+    /* ... your existing styles ... */
+    position: relative; /* Added */
+    overflow: hidden;
+}
+
+.video-slider {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    white-space: nowrap; 
+    height: 300px;
+}
+
+.video-wrapper {
+    display: inline-block; 
+    height: 200px;
+    display: flex; /* Use flexbox to align video elements */
+    align-items: center; /* Center items vertically */
+}
+
+.video {
+  
+    width: 100%; 
+    height:auto ; 
+    display: inline-block; 
+    margin-right: 10px; }
+
+
+.video-slider::-webkit-scrollbar {
+    height: 12px;
+}
+
+.video-slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.video-slider::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.video-slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
